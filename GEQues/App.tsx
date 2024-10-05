@@ -26,6 +26,7 @@ const App = () => {
     <Authenticator.Provider>
       <Authenticator>
         <SafeAreaView style={styles.container}>
+        <StatusBar style="auto" />
           <SignOutButton />
           <TodoList/>
         </SafeAreaView>
@@ -38,12 +39,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    // alignItems: 'center',
+    // justifyContent: 'center',
     padding: 8
   },
   signOutButton:{
-    alignSelf: "flex-end"
+    alignSelf: "flex-end",
+    padding: 8
   }
 });
 
